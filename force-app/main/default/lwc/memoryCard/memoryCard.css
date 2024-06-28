@@ -1,0 +1,108 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.score-info {
+    display: flex;
+    margin-bottom: 12px;
+}
+
+.timer {
+    margin-left: 15px;
+}
+
+.repeat {
+    cursor: pointer;
+    float: right;
+    margin-left: auto;
+}
+
+.repeat:hover {
+    color: #f03d5f;
+}
+
+.game-board-standard {
+    display: grid;
+    grid-template-columns: repeat(4, 83px);
+    grid-template-rows: repeat(4, 83px);
+    width: 350px;
+    height: 350px;
+    background-color: #1c3260;
+    border-radius: 5px;
+    box-shadow: 8px 9px 26px 0 rgba(46, 61, 73, 0.5);
+    padding: 20px 20px;
+}
+
+.game-board-standard.extended {
+    grid-template-columns: repeat(6, 83px);
+    grid-template-rows: repeat(6, 83px);
+    width: 515px;
+    height: 515px;
+}
+
+.card {
+    display: flex;
+    background-color: #f03d5f;
+    border-radius: 5px;
+    height: 60px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: antiquewhite;
+    font-size: 0;
+}
+
+.card.open {
+    background-color: #02b3e4;
+    font-size: 25px;
+}
+
+.card.matched {
+    background-color: #aeb845;
+}
+
+.card.unmatched {
+    background-color: #e2043b;
+}
+
+.card.disabled {
+    pointer-events: none;
+}
+
+.resize {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.board-type-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 10px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 65px;
+    background-color: #f03d5f;
+    border-radius: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.button.clicked {
+    border: #1c3260 2px solid;
+}
+
+.button-text {
+    font-size: 14px;
+    color: white;
+}
